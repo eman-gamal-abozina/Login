@@ -1,0 +1,129 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url(images/pexels-haleyve-2087391.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center Wrapper */
+.auth-wrapper {
+    width: 100%;
+    max-width: 450px;
+    
+}
+
+/* Card */
+.auth-card {
+    backdrop-filter: blur(30px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Inputs */
+.custom-input {
+    text-align: start;
+    width: 92%;
+    margin: 0px 4px 0px 4px;
+    border-radius: 10px;
+    padding: 11px 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.custom-input:focus {
+    border-color: gold;
+    box-shadow: 0 0 8px goldenrod;
+}
+
+/* Register Button */
+.register-btn {
+    width: 97%;
+    background: goldenrod;
+    color: white;
+    margin-top: 12px;
+    padding: 11px 130px;
+    font-size: 17px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: none;
+}
+
+.register-btn:hover {
+        background: rgb(192, 164, 11);
+
+    transform: translateY(-2px);
+}
+
+/* Social Icons Center */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Google Icon */
+.google-icon {
+    font-size: 35px;
+    color: #0e0200;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Facebook Icon */
+.facebook-icon {
+    font-size: 35px;
+    color: #0b4896;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.facebook-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #0b4896;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message.error {
+    background-color: #ffdddd;
+    color: #b30000;
+    border: 1px solid #ffb3b3;
+}
+
+.message.success {
+    background-color: #ddffdd;
+    color: #006600;
+    border: 1px solid #b3ffb3;
+}
+
+
+
